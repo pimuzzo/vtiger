@@ -7,7 +7,7 @@ You can choose between:
 ` docker build -t vtiger . ` (in the same path of your Dockerfile)
 
 ##### 2) Pull it from docker hub:
-` TODO `
+` docker pull pimuzzo/vtiger `
 
 #### RUN CONTAINER:
 
