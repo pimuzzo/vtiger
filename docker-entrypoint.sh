@@ -2,23 +2,23 @@
 set -e
 
 if [ -z "$DB_HOSTNAME" ]; then
-		echo >&2 'error: missing DB_HOSTNAME environment variable'
-		exit 1
+        echo >&2 'error: missing DB_HOSTNAME environment variable'
+        exit 1
 fi
 
 if [ -z "$DB_USERNAME" ]; then
-		echo >&2 'error: missing DB_USERNAME environment variable'
-		exit 1
+        echo >&2 'error: missing DB_USERNAME environment variable'
+        exit 1
 fi
 
 if [ -z "$DB_PASSWORD" ]; then
-		echo >&2 'error: missing DB_PASSWORD environment variable'
-		exit 1
+        echo >&2 'error: missing DB_PASSWORD environment variable'
+        exit 1
 fi
 
 if [ -z "$DB_NAME" ]; then
-		echo >&2 'error: missing DB_NAME environment variable'
-		exit 1
+        echo >&2 'error: missing DB_NAME environment variable'
+        exit 1
 fi
 
 sed -i "s/\$defaultParameters\['db_hostname'\]/'"${DB_HOSTNAME}"'/" vtigercrm/modules/Install/views/Index.php
