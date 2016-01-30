@@ -1,7 +1,5 @@
 FROM php:5.6-apache
 
-RUN sed -i s/archive/it.archive/g /etc/apt/sources.list
-
 RUN a2enmod rewrite expires
 
 # install the PHP extensions we need
