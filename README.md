@@ -21,7 +21,7 @@ You need a DB container, you can choose between:
 
 Then run Vtiger container:
 
-` docker run --name vtiger -d -e DB_HOSTNAME=127.0.0.1 -e DB_USERNAME=vtiger_user -e DB_PASSWORD=pwd -e DB_NAME=vtiger -p 80:80 --net=host vtiger `
+` docker run --name vtiger -d -e DB_HOSTNAME=127.0.0.1 -e DB_USERNAME=vtiger_user -e DB_PASSWORD=pwd -e DB_NAME=vtiger -p 80:80 --net=host pimuzzo/vtiger `
 
 #### CONFIGURATION:
 
